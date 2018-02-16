@@ -44,4 +44,14 @@ public class JsonUtils {
         return result;
 
     }
+
+    public static String listToString(List<String> list){
+        String result = "";
+        if (list == null || list.size() == 0) return result;
+        //Replace [
+        result = list.toString().substring(1);
+        //Replace ]
+        result = result.substring(0, result.length() - 1);
+        return result;
+    }
 }
