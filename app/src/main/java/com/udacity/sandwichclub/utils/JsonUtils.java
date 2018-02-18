@@ -42,7 +42,6 @@ public class JsonUtils {
         }
 
         return result;
-
     }
 
     public static String listToString(List<String> list){
